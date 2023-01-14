@@ -1,0 +1,380 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Acessar aplicação",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7479769800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginStepes.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Login com sucesso",
+        "description": "",
+        "id": "login;login-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 166264200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "preencho login \"leonardo.ss@qazando.com\" e senha \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "leonardo.ss@qazando.com",
+                  "offset": 16
+                },
+                {
+                  "val": "1234567",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginStepes.preencho_login_e_senha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 244234500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clico em login",
+            "match": {
+              "location": "LoginStepes.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 26585400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "sou logado na aplicação",
+            "match": {
+              "location": "LoginStepes.sou_logado_na_aplicação()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@login-sucesso"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Acessar aplicação",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3960711700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginStepes.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Validar mensagem: E-mail inválido., no login inválido",
+        "description": "",
+        "id": "login;validar-mensagem:-\u003cmensagem\u003e--no-login-inválido;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 109366400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "preencho login \"\" e senha \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 16
+                },
+                {
+                  "val": "1234567",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginStepes.preencho_login_e_senha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 248798400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clico em login",
+            "match": {
+              "location": "LoginStepes.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 31818600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "vejo mensagem \"E-mail inválido.\" de campo não preenchido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail inválido.",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepes.vejo_mensagem_de_campo_não_preenchido(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@login-campos-vazios"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Acessar aplicação",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7850495000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginStepes.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Validar mensagem: Senha inválida., no login inválido",
+        "description": "",
+        "id": "login;validar-mensagem:-\u003cmensagem\u003e--no-login-inválido;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 128695900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "preencho login \"email@email.com\" e senha \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "email@email.com",
+                  "offset": 16
+                },
+                {
+                  "val": "",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginStepes.preencho_login_e_senha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 234425300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clico em login",
+            "match": {
+              "location": "LoginStepes.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 24079200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "vejo mensagem \"Senha inválida.\" de campo não preenchido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Senha inválida.",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepes.vejo_mensagem_de_campo_não_preenchido(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@login-campos-vazios"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Acessar aplicação",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 4072869700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na tela de login",
+            "match": {
+              "location": "LoginStepes.que_estou_na_tela_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Validar mensagem: E-mail inválido., no login inválido",
+        "description": "",
+        "id": "login;validar-mensagem:-\u003cmensagem\u003e--no-login-inválido;;4",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 97710500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "preencho login \"\" e senha \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 16
+                },
+                {
+                  "val": "",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginStepes.preencho_login_e_senha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 233662300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clico em login",
+            "match": {
+              "location": "LoginStepes.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 20378900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "vejo mensagem \"E-mail inválido.\" de campo não preenchido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail inválido.",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepes.vejo_mensagem_de_campo_não_preenchido(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@login-campos-vazios"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  Eu como usuário do sistema\n  Quero fazer login\n  Para fazer uma compra no site",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
