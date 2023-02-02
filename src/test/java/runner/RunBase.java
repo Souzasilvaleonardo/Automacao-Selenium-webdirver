@@ -2,6 +2,7 @@ package runner;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -21,8 +22,13 @@ public class RunBase {
         }
 
         switch (browser) {
-            case "chrome":
+            case "chrome-local":
                 driver = new ChromeDriver();
+                break;
+            case "chrome-ci":
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
+                driver = new ChromeDriver(options);
                 break;
             case "firefox":
                 driver = new FirefoxDriver();

@@ -73,7 +73,7 @@
                 </executions>
                 <configuration>
                     <sourceJsonReportDirectory>${project.build.directory}/reports</sourceJsonReportDirectory>
-                    <generatedHtmlReportDirectory>${project.build.directory}/formate estudo - report</generatedHtmlReportDirectory>
+                    <generatedHtmlReportDirectory>${project.build.directory}/formate-report</generatedHtmlReportDirectory>
                 </configuration>
             </plugin>
             <plugin>
@@ -81,7 +81,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
             </plugin>
         </plugins>

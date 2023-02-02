@@ -11,92 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7479769800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "que estou na tela de login",
-            "match": {
-              "location": "LoginStepes.que_estou_na_tela_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 13,
-        "name": "Login com sucesso",
-        "description": "",
-        "id": "login;login-com-sucesso",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 166264200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "preencho login \"leonardo.ss@qazando.com\" e senha \"1234567\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "leonardo.ss@qazando.com",
-                  "offset": 16
-                },
-                {
-                  "val": "1234567",
-                  "offset": 50
-                }
-              ],
-              "location": "LoginStepes.preencho_login_e_senha(String,String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 244234500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "clico em login",
-            "match": {
-              "location": "LoginStepes.clico_em_login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 26585400,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "sou logado na aplicação",
-            "match": {
-              "location": "LoginStepes.sou_logado_na_aplicação()"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@login-sucesso"
-          }
-        ]
-      },
-      {
-        "line": 9,
-        "name": "Acessar aplicação",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 3960711700,
+              "duration": 3892015200,
               "status": "passed"
             },
             "line": 10,
@@ -118,7 +33,7 @@
         "steps": [
           {
             "result": {
-              "duration": 109366400,
+              "duration": 3983851500,
               "status": "passed"
             },
             "line": 21,
@@ -140,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 248798400,
+              "duration": 53458300,
               "status": "passed"
             },
             "line": 22,
@@ -152,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 31818600,
+              "duration": 36642600,
               "status": "passed"
             },
             "line": 23,
@@ -187,7 +102,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7850495000,
+              "duration": 2533029600,
               "status": "passed"
             },
             "line": 10,
@@ -209,7 +124,7 @@
         "steps": [
           {
             "result": {
-              "duration": 128695900,
+              "duration": 3087627600,
               "status": "passed"
             },
             "line": 21,
@@ -231,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 234425300,
+              "duration": 41525800,
               "status": "passed"
             },
             "line": 22,
@@ -243,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 24079200,
+              "duration": 24730000,
               "status": "passed"
             },
             "line": 23,
@@ -278,7 +193,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4072869700,
+              "duration": 2554306200,
               "status": "passed"
             },
             "line": 10,
@@ -300,7 +215,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97710500,
+              "duration": 3339065400,
               "status": "passed"
             },
             "line": 21,
@@ -322,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 233662300,
+              "duration": 44413100,
               "status": "passed"
             },
             "line": 22,
@@ -334,7 +249,7 @@
           },
           {
             "result": {
-              "duration": 20378900,
+              "duration": 23417900,
               "status": "passed"
             },
             "line": 23,
