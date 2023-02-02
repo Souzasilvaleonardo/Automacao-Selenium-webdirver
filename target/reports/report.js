@@ -9,64 +9,6 @@ formatter.feature({
     }
   ]
 });
-formatter.background({
-  "name": "Acessar aplicação",
-  "description": "",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "name": "que estou na tela de login",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "LoginStepes.que_estou_na_tela_de_login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login com sucesso",
-  "description": "",
-  "keyword": "Cenário",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@login-sucesso"
-    }
-  ]
-});
-formatter.step({
-  "name": "preencho login \"leonardo.ss@qazando.com\" e senha \"1234567\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "LoginStepes.preencho_login_e_senha(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico em login",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "LoginStepes.clico_em_login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "sou logado na aplicação",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "LoginStepes.sou_logado_na_aplicação()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenarioOutline({
   "name": "Validar mensagem: \u003cmensagem\u003e, no login inválido",
   "description": "",
