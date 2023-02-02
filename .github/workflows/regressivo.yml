@@ -31,8 +31,3 @@ on:
 
         - name: Run test
           run: mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci cluecumber-report:reporting
-
-
-
-
-
