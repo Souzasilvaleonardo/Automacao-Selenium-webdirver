@@ -31,3 +31,27 @@ jobs:
 
       - name: Run test
         run: mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci cluecumber-report:reporting
+
+      - name: Notificação Slack - Sucesso
+        if: ${{ success() }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: teste-automatizado
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: https://www.clipartmax.com/png/full/85-851687_campfire-icon-14-icon-success-error.png
+          SLACK_MESSAGE: 'Sucesso na execução de teste do PR :white_check_mark:'
+          SLACK_TITLE: 'Sucesso na execução de teste do PR :white_check_mark:'
+          SLACK_USERNAME: SUCESSO
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Notificação Slack - Falha
+        if: ${{ failure() }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+        SLACK_CHANNEL: teste-automatizado
+        SLACK_COLOR: ${{ job.status }}
+        SLACK_ICON: https://cdn-icons-png.flaticon.com/512/4436/4436559.png
+        SLACK_MESSAGE: 'Erro na execução de teste do PR :fire:'
+        SLACK_TITLE: 'Erro na execução de teste do PR :fire:'
+        SLACK_USERNAME: ERRO
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
