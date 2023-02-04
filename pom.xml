@@ -73,7 +73,7 @@
                 </executions>
                 <configuration>
                     <sourceJsonReportDirectory>${project.build.directory}/reports</sourceJsonReportDirectory>
-                    <generatedHtmlReportDirectory>${project.build.directory}/formate-report</generatedHtmlReportDirectory>
+                    <generatedHtmlReportDirectory>${project.build.directory}/format-report</generatedHtmlReportDirectory>
                 </configuration>
             </plugin>
             <plugin>
