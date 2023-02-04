@@ -48,10 +48,10 @@ jobs:
         if: ${{ failure() }}
         uses: rtCamp/action-slack-notify@v2
         env:
-        SLACK_CHANNEL: teste-automatizado
-        SLACK_COLOR: ${{ job.status }}
-        SLACK_ICON: https://cdn-icons-png.flaticon.com/512/4436/4436559.png
-        SLACK_MESSAGE: 'Erro na execução de teste do PR :fire:'
-        SLACK_TITLE: 'Erro na execução de teste do PR :fire:'
-        SLACK_USERNAME: ERRO
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: teste-automatizado
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: https://cdn-icons-png.flaticon.com/512/4436/4436559.png
+          SLACK_MESSAGE: 'Erro na execução de teste do PR :fire:'
+          SLACK_TITLE: 'Erro na execução de teste do PR :fire:'
+          SLACK_USERNAME: ERRO
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
